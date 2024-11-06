@@ -2,23 +2,23 @@
 I decided we needed to just start again from scratch because not all of us contributed to the first project equally and thus didnt really learn much from it
 
 ### TO DO
-1
+##### 1
   - **FRONTEND** decide how the site will look and make changes to `base.html` to reflect that
   - **BACKEND** set up all the models and forms (BACKEND ONLY, use test page to set up simple form and see that they go to the django database)
-2
+##### 2
   - **FRONTEND** create and link all the forms on the backend to their respective pages (also make sure they actually work)
   - **BACKEND** make it possible to delete and modify data thats been added to the forms
-3
+##### 3
   - **FRONTEND** make `menupage.html` display both dishes original to the restaurant and submitted recipes
   - **BACKEND** mySQL :skull:
-4
+##### 4
   - **GENERAL** debugging :skull:
-5
+##### 5
   - **FRONTEND** display when users are logged in and add option to log out
   - **BACKEND** add mpesa functions through daraja (i also blacked out during this class i hope one of you is more familiar with it than me)
-6
+##### 6
   - **GENERAL** debugging again
-7
+##### 7
   - **OPTIONAL** make the blog page?
 
 ### Notes (important please god read this)
