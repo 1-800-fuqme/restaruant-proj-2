@@ -3,23 +3,23 @@ I decided we needed to just start again from scratch because not all of us contr
 
 ### TO DO
 1
-  -[ ] **FRONTEND** decide how the site will look and make changes to `base.html` to reflect that
-  -[ ] **BACKEND** set up all the models and forms (BACKEND ONLY, use test page to set up simple form and see that they go to the django database)
+  - **FRONTEND** decide how the site will look and make changes to `base.html` to reflect that
+  - **BACKEND** set up all the models and forms (BACKEND ONLY, use test page to set up simple form and see that they go to the django database)
 2
-  -[ ] **FRONTEND** create and link all the forms on the backend to their respective pages (also make sure they actually work)
-  -[ ] **BACKEND** make it possible to delete and modify data thats been added to the forms
+  - **FRONTEND** create and link all the forms on the backend to their respective pages (also make sure they actually work)
+  - **BACKEND** make it possible to delete and modify data thats been added to the forms
 3
-  -[ ] **FRONTEND** make `menupage.html` display both dishes original to the restaurant and submitted recipes
-  -[ ] **BACKEND** mySQL :skull:
+  - **FRONTEND** make `menupage.html` display both dishes original to the restaurant and submitted recipes
+  - **BACKEND** mySQL :skull:
 4
-  -[ ] **GENERAL** debugging :skull:
+  - **GENERAL** debugging :skull:
 5
-  -[ ] **FRONTEND** display when users are logged in and add option to log out
-  -[ ] **BACKEND** add mpesa functions through daraja (i also blacked out during this class i hope one of you is more familiar with it than me)
+  - **FRONTEND** display when users are logged in and add option to log out
+  - **BACKEND** add mpesa functions through daraja (i also blacked out during this class i hope one of you is more familiar with it than me)
 6
-  -[ ] **GENERAL** debugging again
+  - **GENERAL** debugging again
 7
-  -[ ] **OPTIONAL** make the blog page?
+  - **OPTIONAL** make the blog page?
 
 ### Notes (important please god read this)
 - as long as we inform eachother before making changes and shit we should all be able to just push changes directly to the main branch even if we'd have to learn git
