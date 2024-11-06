@@ -1,0 +1,5 @@
+# I'm using this to remove certain files and folders when running git
+# plz dont change it unless theres something you also want to remove
+__pycache__/
+.idea/
+.vscode/

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <title>{% block title %}Base{% endblock %}</title>
+        {% load static%}
+        <link rel="stylesheet" href="../../static/css/style.css"/>
+        <!--normal stylesheet link-->
+        <link
+            rel="stylesheet"
+            href="../../static/css/bootstrap/css/bootstrap.min.css"/>
+        <!--bootstrap link-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <!--font awesome link so we can add icons-->
+    </head>
+    <body>
+        {% block content %} {% endblock %}
+<!--dont add anything past this point, this is just the base template so no one will see it-->
+    </body>
+</html>
