@@ -1,27 +1,118 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{% block title %}Base{% endblock %}</title>
         {% load static%}
-        <link rel="stylesheet" href="../../static/css/style.css"/>
+        <link rel="stylesheet" href="../../static/css/style.css" />
         <!--normal stylesheet link-->
         <link
             rel="stylesheet"
-            href="../../static/css/bootstrap/css/bootstrap.min.css"/>
+            href="../../static/css/bootstrap/css/bootstrap.min.css"
+        />
         <!--bootstrap link-->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous"
-            referrerpolicy="no-referrer"/>
+            referrerpolicy="no-referrer"
+        />
         <!--font awesome link so we can add icons-->
     </head>
-    <body>
+    <body class="page-container">
+        <header id="header" class="header fixed-top">
+            <div class="top-bar">
+                <span
+                    ><i class="fa-solid fa-envelope"></i>
+                    contact@example.com</span
+                >
+                <span><i class="fa-solid fa-phone"></i> +1 5589 55488 55</span>
+                <span class="language-switch">En / De</span>
+            </div>
+            <nav class="navbar">
+                <h1>Fork & Fortune</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="dropdown"><a href="menu.html">Menu ▼</a></li>
+                    <li><a href="cookbook.html">Our Recipes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                </ul>
+                <button class="book-btn">
+                    <a href="contact.html">BOOK A TABLE</a>
+                </button>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h2>Welcome to <span>Fork & Fortune</span></h2>
+                <p>
+                    Your destination for delicious meals and delightful
+                    experiences.
+                </p>
+                <div class="hero-buttons">
+                    <button><a href="menu.html">OUR MENU</a></button>
+                    <button><a href="contact.html">BOOK A TABLE</a></button>
+                </div>
+            </div>
+        </section>
         {% block content %} {% endblock %}
-<!--dont add anything past this point, this is just the base template so no one will see it-->
+        <!--dont add anything past this point, this is just the base template so no one will see it-->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Restaurant Info Section -->
+                <div class="footer-section">
+                    <h3>Fork & Fortune</h3>
+                    <p>A108 Adam Street<br />New York, NY 535022</p>
+                    <p><strong>Phone:</strong> +1 5589 55488 55</p>
+                    <p><strong>Email:</strong> info@example.com</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                        <a href="#"><i class="fa-solid fa-camera"></i></a>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <!-- Useful Links Section -->
+                <div class="footer-section">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact Info</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="footer-section">
+                    <h4>Our Newsletter</h4>
+                    <p>
+                        Subscribe to our newsletter and receive the latest news
+                        about our products and services!
+                    </p>
+                    <form action="#">
+                        <input type="email" placeholder="Your Email" required />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; Copyright <strong>Fork & Fortune</strong>. All Rights
+                    Reserved
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
