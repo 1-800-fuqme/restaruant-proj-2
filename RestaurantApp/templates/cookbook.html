@@ -1,6 +1,38 @@
 {% extends 'base.html' %}
 {% block title %}Cookbook{% endblock %}
 {% block content %}
-<!-- we should use this as a place to search for submitted recipes
-as well as inputing them. should let us have fewer things on the menu page-->
+<h2>Cookbook</h2>
+
+<form action="" method="post" class="col-md-6 offset-md-3">
+    {% csrf_token %}
+    <h3 class="text-center white-text">Add your own recipe</h3>
+    <div class="form-group">
+        <label for="cookbook_name">Recipe Name</label>
+        <input type="text" class="form-control" id="cookbook_name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="cookbook_description">Description</label>
+        <textarea class="form-control" id="cookbook_description" name="description" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="cookbook_ingredients">Ingredients</label>
+        <textarea class="form-control" id="cookbook_ingredients" name="ingredients" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="prep_time_min">Cooking Time</label>
+        <input type="number" class="form-control" id="prep_time_min" name="prep_time_min" required>
+    </div>
+    <div class="form-group">
+        <label for="cookbook_instructions">Instructions</label>
+        <textarea class="form-control" id="cookbook_instructions" name="instructions" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="image">Image</label>
+        <input type="file" class="form-control" id="cookbook_image" name="image" required>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary col-md-6 offset-md-3">Submit</button>
+    </div>
+</form>
+
 {% endblock %}
